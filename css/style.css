@@ -95,9 +95,12 @@ footer {
 }
 
 form {
-	margin: 40px 0;
+	align-items: center;
+	margin: 5% 25% 0 25%;
 }
-
+table{
+	width: auto;
+}
 form label,
 form legend {
 	display: block;
@@ -109,7 +112,7 @@ form legend {
 	display: block;
 	margin: 0 0 20px;
 	padding: 10px 25px;
-	width: 50%;
+	width: 80%;
 }
 
 .checkbox {
@@ -135,7 +138,8 @@ form legend {
 }
 
 table {
-	margin: 20px 0 40px;
+	width: 40%;
+	margin: 5% 30%;
 }
 
 thead {
@@ -183,6 +187,14 @@ th {
 }
 .imagembeneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+
+}
+.imagembeneficios:hover{
+    opacity: 0.3;
+	transition: 400ms;
 }
 .utensilios {
 	width: 120px;
@@ -208,6 +220,7 @@ th {
 .beneficios {
 	padding: 3em 0;
 	background: #888888;
+	
 }
 .conteudo-beneficios {
 	width: 640px;
@@ -223,12 +236,45 @@ th {
 .itens {
 	line-height: 1.5;
 }
-
 .itens:first-child {
 	font-weight: bold;
 }
-
 .itens::before{
     content: "★";
-
+}
+@media screen and (max-width: 480px) { 
+	main form,table,.enviar{
+		margin: auto;
+		width: 80%;
+	}
+	table{
+		margin: 5%;
+	}
+	.principal,.mapa-conteudo,.conteudo-beneficios{
+		margin: 0 15px 0 15px;
+	}
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+        width: auto;
+    }
+	
+	.produtos li{
+		display: block;
+		margin: auto;
+		width: 80%;
+	}
+	
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+		text-align: center;
+	}
+	.imagembeneficios{
+		box-shadow: none;
+	}
+	.lista-beneficios,.imagembeneficios{
+		width: 100%;
+		margin: 0 0 30px 0;
+	}
 }
